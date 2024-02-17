@@ -16,6 +16,10 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 ::-webkit-scrollbar{
   display: none;

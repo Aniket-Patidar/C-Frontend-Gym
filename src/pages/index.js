@@ -6,6 +6,7 @@ import 'swiper/css';
 import Coach from "@/components/Coach";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import ScrollButton from "@/components/ScrollButton";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
         </Link>
       </div>
       <Footer></Footer>
+      {/* <ScrollButton></ScrollButton> */}
     </div>
   )
 }

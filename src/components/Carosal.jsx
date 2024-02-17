@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 const Carosal = ({ Swiper, SwiperSlide }) => {
   return (
-    <div className="w-[100vw] pt-[100px]">
+    <div className="w-[100vw]">
       <Swiper
         cssMode={true}
         navigation={true}

@@ -14,7 +14,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
-      <nav className="text-white dark:bg-c2 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 ">
+      <nav className="text-white dark:bg-c2  w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 ">
         <div className="h-[35px] bg-c1 flex  items-center gap-5 px-3 ">
           <div className="flex items-center gap-1">
             <MdOutlineLocalPhone className="text-c2" />
@@ -52,7 +52,7 @@ const Navbar = () => {
             <ul className="flex flex-col font-semibold  text-lg text-white bg-transparent p-4 md:p-0 mt-4  border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
               <li>
                 <Link
-                  href="#"
+                  href="/"
                   className="block py-2 px-3  rounded md:bg-transparent  md:p-0 "
                   aria-current="page"
                 >
@@ -69,7 +69,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="packages"
                   className="block py-2 px-3 rounded md:hover:bg-transparent  md:p-0 "
                 >
                   Services
@@ -90,19 +90,19 @@ const Navbar = () => {
           <div className=" md:hidden bg-c1 text-white flex flex-col  px-[10px] py-[20px] text-sm gap-3">
             <div className="flex gap-1">
               <FaHome />
-              <Link href="#">Home</Link>
+              <Link href="/">Home</Link>
             </div>
             <div className="flex gap-1">
               <MdOutlineRoundaboutLeft />
-              <Link href="#">About</Link>
+              <Link href="/about">About</Link>
             </div>
             <div className="flex gap-1">
               <GrServices />
-              <Link href="#">Services</Link>
+              <Link href="/packages">Services</Link>
             </div>
             <div className="flex gap-1">
               <RiContactsFill />
-              <Link href="#">Contract</Link>
+              <Link href="/contractUs">Contract</Link>
             </div>
           </div>
         )}
