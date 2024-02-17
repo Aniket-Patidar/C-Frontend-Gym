@@ -35,7 +35,7 @@ const Navbar = () => {
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               GYM
             </span>
-          </Lin>
+          </Link>
           <div className="flex gap-2 text-white items-center justify-center   md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <FaInstagram className="cursor-pointer" />
             <FaFacebook className="cursor-pointer" />
@@ -86,19 +86,19 @@ const Navbar = () => {
           <div className=" md:hidden bg-c1 text-white flex flex-col  px-[10px] py-[20px] text-sm gap-3">
             <div className="flex gap-1">
               <FaHome />
-              <a href="#">Home</a>
+              <Link href="#">Home</Link>
             </div>
             <div className="flex gap-1">
               <MdOutlineRoundaboutLeft />
-              <a href="#">About</a>
+              <Link href="#">About</Link>
             </div>
             <div className="flex gap-1">
               <GrServices />
-              <a href="#">Services</a>
+              <Link href="#">Services</Link>
             </div>
             <div className="flex gap-1">
               <RiContactsFill />
-              <a href="#">Contract</a>
+              <Link href="#">Contract</Link>
             </div>
           </div>
         )}
