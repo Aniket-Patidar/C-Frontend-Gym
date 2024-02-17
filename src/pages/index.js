@@ -23,7 +23,7 @@ export default function Home() {
 
       <div className="#18191E w-full h-[30vh] bg-c2  flex items-center justify-evenly text-white flex-col">
         <p className="text-center">
-          For any inquiries, feedback, or to schedule a visit, please don't
+          For any inquiries, feedback, or to schedule a visit, please don&apost
           <br />
           hesitate to reach out to us using the contact information provided below.
         </p>
