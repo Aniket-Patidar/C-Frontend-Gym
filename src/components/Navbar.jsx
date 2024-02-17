@@ -9,6 +9,7 @@ import { FaHome } from "react-icons/fa";
 import { MdOutlineRoundaboutLeft } from "react-icons/md";
 import { GrServices } from "react-icons/gr";
 import { RiContactsFill } from "react-icons/ri";
+import Link from "next/link";
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
@@ -26,7 +27,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
+          <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
@@ -34,7 +35,7 @@ const Navbar = () => {
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               GYM
             </span>
-          </a>
+          </Lin>
           <div className="flex gap-2 text-white items-center justify-center   md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <FaInstagram className="cursor-pointer" />
             <FaFacebook className="cursor-pointer" />
