@@ -57,9 +57,9 @@ const Coach = () => {
 
   return (
     <div className="flex items-center justify-center flex-wrap md:px-[10px] py-3">
-      {data.map(({ name, post, des, src, instagram, twitter, facebook }) => {
+      {data.map(({ name, post, des, src, instagram, twitter, facebook },i) => {
         return (
-          <div className="flex w-[600px] h-[250px]  bg-[#292C33] overflow-hidden">
+          <div className="flex w-[600px] h-[250px]  bg-[#292C33] overflow-hidden" key={i}>
             <div className="h-[250px] w-[600px] overflow-hidden">
               <img
                 className=" object-cover object-center w-full h-full"
