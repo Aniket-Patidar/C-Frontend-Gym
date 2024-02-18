@@ -5,18 +5,23 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Lazy from "./Lazy";
 import Image from "next/image";
+
 const Carosal = ({ Swiper, SwiperSlide }) => {
-  var data = [
+  const data = [
     {
+      id: 1,
       src: "/images/s1.jpg",
     },
     {
+      id: 2,
       src: "/images/s2.jpg",
     },
     {
+      id: 3,
       src: "/images/s3.jpg",
     },
     {
+      id: 4,
       src: "/images/s4.jpg",
     },
   ];
@@ -32,21 +37,19 @@ const Carosal = ({ Swiper, SwiperSlide }) => {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="h-[85vh] w-[100vw] overflow-hidden"
       >
-        {data.map(({ src }, i) => {
-          return (
-            <div className="" key={i}>
-              <SwiperSlide>
-                <Lazy
-                  src={src}
-                  height={"85vh"}
-                  width={"100vw"}
-                  className="h-full w-full object-cover object-center"
-                  alt=""
-                />
-              </SwiperSlide>
-            </div>
-          );
-        })}
+        {data.map(({ id, src }) => (
+          <div className="" key={id}>
+            <SwiperSlide>
+              <Lazy
+                src={src}
+                height={"85vh"}
+                width={"100vw"}
+                className="h-full w-full object-cover object-center"
+                alt=""
+              />
+            </SwiperSlide>
+          </div>
+        ))}
       </Swiper>
     </div>
   );
