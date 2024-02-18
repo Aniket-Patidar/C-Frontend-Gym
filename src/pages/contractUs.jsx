@@ -1,9 +1,10 @@
 import Link from "next/link";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const contractUs = () => {
+
+const ContractUs = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -29,12 +30,13 @@ const contractUs = () => {
       });
 
       if (response.ok) {
-        toast.success("We will contract your soon!");
+        toast.success("We will contact you soon!"); // Notify success
       } else {
-        toast.success("Please try again later.");
+        toast.error("Please try again later."); // Notify failure
       }
     } catch (error) {
-      console.error("Error submitting the form:", error);
+      console.error("Error submitting the form:", error); // Log error
+      toast.error("An error occurred. Please try again later."); // Notify error
     }
 
     setFormData({
@@ -44,6 +46,7 @@ const contractUs = () => {
       message: "",
     });
   };
+
 
   return (
     <div>
@@ -173,4 +176,4 @@ const contractUs = () => {
   );
 };
 
-export default contractUs;
+export default ContractUs;
