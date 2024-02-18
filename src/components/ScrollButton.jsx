@@ -7,11 +7,12 @@ const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   const goToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    console.log("click");
+    window.scrollTo({ top: 0, behavior: "auto" });
   };
 
   const listenToScroll = () => {
-    console.log("sc");
+    console.log("listenToScroll");
     const heightToHide = 20;
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
@@ -32,7 +33,7 @@ const GoToTop = () => {
     <>
       {isVisible && (
         <div
-          className="fixed bottom-10 right-10 w-16 h-16 bg-blue-500 text-white flex justify-center items-center rounded-full cursor-pointer"
+          className="fixed bottom-10 right-10 w-[40px] h-[40px] bg-blue-500 text-white flex justify-center items-center rounded-full cursor-pointer"
           onClick={goToTop}
         >
           <FaArrowUp className="text-2xl" />

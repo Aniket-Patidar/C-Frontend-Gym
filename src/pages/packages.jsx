@@ -52,7 +52,7 @@ const PackageCard = ({ title, description, price, imageSrc }) => {
         <h2 className="text-xl font-semibold text-gray-800 mb-4">{title}</h2>
         <p className="text-gray-700 mb-4">{description}</p>
         <p className="text-gray-700">Price: {price}</p>
-        <button className="mt-4 bg-c2 text-white py-2 px-4 rounded hover:bg-c3 transition duration-300">
+        <button className="mt-4 bg-c2 text-white py-2 px-4 rounded hover:bg-c3 transition duration-300  cool-button ">
           Purchase
         </button>
       </div>

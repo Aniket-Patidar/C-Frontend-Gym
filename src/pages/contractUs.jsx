@@ -8,7 +8,7 @@ const contractUs = () => {
         {/* source https://tailblocks.cc/ */}
         <section className="body-font relative bg-c1 text-white ">
           <Link href="/">
-            <IoIosArrowBack className="font-semibold text-2xl absolute top-5 left-3 cursor-pointer" />
+            <IoIosArrowBack className="font-semibold text-2xl absolute top-5 left-3 cursor-pointer iconsOpacity" />
           </Link>
           <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
             <div className="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
@@ -50,8 +50,8 @@ const contractUs = () => {
                 Contract Us
               </h2>
               <p className="leading-relaxed mb-5 ">
-                We are thrilled to hear from you! Please fill out the form
-                below and we get back to you as soon as possible.
+                We are thrilled to hear from you! Please fill out the form below
+                and we get back to you as soon as possible.
               </p>
               <div className="relative mb-4">
                 <label htmlFor="name" className="leading-7 text-sm">
@@ -97,7 +97,7 @@ const contractUs = () => {
                   defaultValue={""}
                 />
               </div>
-              <button className="text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">
+              <button className= "  text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg cool-button  ">
                 Button
               </button>
               <p className="text-xs text-gray-500 mt-3">

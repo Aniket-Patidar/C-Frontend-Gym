@@ -1,6 +1,7 @@
 // pages/about.js
 
 import Navbar from "@/components/Navbar";
+import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
@@ -43,15 +44,15 @@ const About = () => {
                 Address: 123 Fitness Street, City, Country
               </p>
               <div className="flex justify-center mt-4">
-                <a href="#" className="text-white mr-4 hover:text-gray-400">
-                  <FaFacebook size={24} />
-                </a>
-                <a href="#" className="text-white mr-4 hover:text-gray-400">
-                  <FaTwitter size={24} />
-                </a>
-                <a href="#" className="text-white hover:text-gray-400">
-                  <FaInstagram size={24} />
-                </a>
+                <Link href="#" className="text-white mr-4 hover:text-gray-400">
+                  <FaFacebook size={24} className="iconsOpacity" />
+                </Link>
+                <Link href="#" className="text-white mr-4 hover:text-gray-400">
+                  <FaTwitter size={24} className="iconsOpacity" />
+                </Link>
+                <Link href="#" className="text-white hover:text-gray-400">
+                  <FaInstagram size={24} className="iconsOpacity" />
+                </Link>
               </div>
             </div>
           </div>

@@ -9,18 +9,9 @@ import Link from "next/link";
 import ScrollButton from "@/components/ScrollButton";
 import { useEffect, useState } from "react";
 import ScrollToTopButton from "@/components/ScrollButton";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function Home() {
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
-
 
   return (
     <div>
@@ -32,19 +23,17 @@ export default function Home() {
         <Programs></Programs>
         <Coach></Coach>
       </div>
-
-      <div className="#18191E w-full h-[30vh] bg-c2  flex items-center justify-evenly text-white flex-col">
+      <div className="#18191E w-full h-[30vh] bg-c2 flex items-center justify-evenly text-white flex-col">
         <p className="text-center">
           For any inquiries, feedback, or to schedule a visit, please don&apost
           <br />
           hesitate to reach out to us using the contact information provided below.
         </p>
         <Link href="/contractUs">
-          <button className="px-[20px] py-[6px] border">Contract Us</button>
+          <button className="px-[20px] py-[6px] border cool-button">Contract Us</button>
         </Link>
       </div>
       <Footer></Footer>
-
       <ScrollToTopButton />
     </div>
   )
