@@ -2,19 +2,20 @@ import React, { useEffect, useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 
 const ScrollButton = () => {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      console.log(window.document.body);
-      console.log("Scroll position:", window.scrollY);
-      if (window.document.body.scrollY > 100) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   if (window.document.body.scrollTop > 100) {
+  //     console.log("true");
+  //     setVisible(true);
+  //   } else {
+  //     console.log("false");
+  //     setVisible(false);
+  //   }
+  //   window.addEventListener("scroll", () => {
+
+  //   });
+  // }, [window.document.body.scrollTop]);
 
   const scrollTop = () => {
     window.document.body.scrollTo({
