@@ -7,15 +7,26 @@ import Coach from "@/components/Coach";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import ScrollButton from "@/components/ScrollButton";
+import { useEffect, useState } from "react";
+import ScrollToTopButton from "@/components/ScrollButton";
 
 export default function Home() {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+
+
   return (
     <div>
-
       {/* navbar */}
       <Navbar></Navbar>
       <Carosal Swiper={Swiper} SwiperSlide={SwiperSlide}></Carosal>
-
       {/* center */}
       <div className="bg-c3  text-white md:py-[30px]  md:px-[10px]">
         <Programs></Programs>
@@ -33,7 +44,9 @@ export default function Home() {
         </Link>
       </div>
       <Footer></Footer>
-      {/* <ScrollButton></ScrollButton> */}
+
+
+      <ScrollToTopButton></ScrollToTopButton>
     </div>
   )
 }
