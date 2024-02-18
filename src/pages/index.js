@@ -13,6 +13,10 @@ import { FaArrowUp } from "react-icons/fa";
 
 export default function Home() {
 
+
+
+
+
   return (
     <div>
       {/* navbar */}
@@ -34,6 +38,7 @@ export default function Home() {
         </Link>
       </div>
       <Footer></Footer>
+      <ScrollButton></ScrollButton>
     </div>
   )
 }

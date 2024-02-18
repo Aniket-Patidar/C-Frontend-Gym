@@ -1,41 +1,40 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { IoIosArrowUp } from "react-icons/io";
 
-const ScrollToTopButton = () => {
-  const [isVisible, setIsVisible] = useState(false);
+const ScrollButton = () => {
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const toggleVisibility = () => {
-      // if the user scrolls down, show the button
-      window.scrollY > 500 ? setIsVisible(true) : setIsVisible(false);
-    };
-    // listen for scroll events
-    window.addEventListener("scroll", toggleVisibility);
-
-    // clear the listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", toggleVisibility);
-    };
+    window.addEventListener("scroll", () => {
+      console.log(window.document.body);
+      console.log("Scroll position:", window.scrollY);
+      if (window.document.body.scrollY > 100) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    });
   }, []);
 
-  // handles the animation when scrolling to the top
-  const scrollToTop = () => {
-    isVisible &&
-      window.scrollTo({
-        top: 0,
-        behavior: "auto",
-      });
+  const scrollTop = () => {
+    window.document.body.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
-    <button
-      className={`fixed bottom-4 right-4 rounded-full p-2 outline-none transition-opacity duration-200 ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}
-      onClick={scrollToTop}
-    >
-      jnASdjlfwrn
-    </button>
+    <div>
+      {visible && (
+        <button
+          onClick={scrollTop}
+          className="fixed z-20 right-6 bottom-6 bg-blue-500 text-white rounded-full p-2 shadow-md hover:bg-blue-600 focus:outline-none transition duration-300"
+        >
+          <IoIosArrowUp className="w-6 h-6" />
+        </button>
+      )}
+    </div>
   );
 };
 
-export default ScrollToTopButton;
+export default ScrollButton;

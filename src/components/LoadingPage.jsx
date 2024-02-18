@@ -9,7 +9,7 @@ const LoadingPage = () => {
       <div className="loadingContent">
         <div className="loadingText">
           <div>
-            <Image height={100} width={100} src="/images/loader.gif"></Image>
+            <Image height={100} width={100} src="/images/loader.gif" alt="img"></Image>
             Loading...
           </div>
         </div>
