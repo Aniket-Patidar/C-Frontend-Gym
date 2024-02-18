@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
+import { CgGym } from "react-icons/cg";
 
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [grayscale, setGrayscale] = useState(false);
-
   useEffect(() => {
     const onMouseMove = (e) => {
       setPosition({ x: e.clientX, y: e.clientY });
@@ -31,15 +31,11 @@ const CustomCursor = () => {
       style={{ left: position.x, top: position.y }}
     >
       {/* Custom cursor with dynamic grayscale and animation */}
-      <div
-        className={` w-0 h-0  md:w-5 md:h-5  bg-transparent rounded-full border border-solid cursor-animation ${
-          grayscale ? "grayscale" : ""
-        }`}
-      ></div>
+      <div>
+        <CgGym className="text-white text-3xl" />
+      </div>
     </div>
   );
 };
 
 export default CustomCursor;
-
-
