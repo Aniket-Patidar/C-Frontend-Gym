@@ -34,6 +34,8 @@ const Carosal = ({ Swiper, SwiperSlide }) => {
         pagination={true}
         mousewheel={true}
         keyboard={true}
+        autoplay={5000}
+        speed={800}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="h-[85vh] w-[100vw] overflow-hidden"
       >

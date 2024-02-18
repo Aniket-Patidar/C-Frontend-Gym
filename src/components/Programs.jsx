@@ -29,7 +29,7 @@ const Programs = () => {
     <div className="h-fit py-5 flex gap-[20px]  items-center justify-center md:justify-evenly flex-wrap w-[100vw] ">
       {data.map(({ src, id, title }) => {
         return (
-          <div className="relative w-[85vw] md:h-[440px] md:w-[300px] overflow-hidden bg-c1">
+          <div className="relative w-[85vw] md:h-[440px] md:w-[300px] overflow-hidden bg-c1" key={id}>
             <Lazy
               style={{ transition: "all 1s ease-in-out" }}
               className="w-full h-full object-cover object-center hover:scale-150 transitionTransform"
