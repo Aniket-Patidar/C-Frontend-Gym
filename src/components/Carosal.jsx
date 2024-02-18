@@ -32,17 +32,19 @@ const Carosal = ({ Swiper, SwiperSlide }) => {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="h-[85vh] w-[100vw] overflow-hidden"
       >
-        {data.map(({ src }) => {
+        {data.map(({ src }, i) => {
           return (
-            <SwiperSlide>
-              <Lazy
-                src={src}
-                height={"85vh"}
-                width={"100vw"}
-                className="h-full w-full object-cover object-center"
-                alt=""
-              />
-            </SwiperSlide>
+            <div className="" key={i}>
+              <SwiperSlide>
+                <Lazy
+                  src={src}
+                  height={"85vh"}
+                  width={"100vw"}
+                  className="h-full w-full object-cover object-center"
+                  alt=""
+                />
+              </SwiperSlide>
+            </div>
           );
         })}
       </Swiper>
