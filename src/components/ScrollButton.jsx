@@ -11,7 +11,7 @@ const GoToTop = () => {
   };
 
   const listenToScroll = () => {
-    console.log("scroll");
+    console.log("sc");
     const heightToHide = 20;
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;

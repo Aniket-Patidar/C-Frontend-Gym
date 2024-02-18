@@ -50,14 +50,11 @@ const contractUs = () => {
                 Contract Us
               </h2>
               <p className="leading-relaxed mb-5 ">
-                We're thrilled to hear from you! Please fill out the form below
-                and we'll get back to you as soon as possible.
+                We are thrilled to hear from you! Please fill out the form
+                below and we get back to you as soon as possible.
               </p>
               <div className="relative mb-4">
-                <label
-                  htmlFor="name"
-                  className="leading-7 text-sm"
-                >
+                <label htmlFor="name" className="leading-7 text-sm">
                   Name
                 </label>
                 <input
@@ -68,10 +65,7 @@ const contractUs = () => {
                 />
               </div>
               <div className="relative mb-4">
-                <label
-                  htmlFor="email"
-                  className="leading-7 text-sm "
-                >
+                <label htmlFor="email" className="leading-7 text-sm ">
                   Email
                 </label>
                 <input
@@ -82,10 +76,7 @@ const contractUs = () => {
                 />
               </div>
               <div className="relative mb-4">
-                <label
-                  htmlFor="number"
-                  className="leading-7 text-sm "
-                >
+                <label htmlFor="number" className="leading-7 text-sm ">
                   Phone number
                 </label>
                 <input
@@ -96,10 +87,7 @@ const contractUs = () => {
                 />
               </div>
               <div className="relative mb-4">
-                <label
-                  htmlFor="message"
-                  className="leading-7 text-sm "
-                >
+                <label htmlFor="message" className="leading-7 text-sm ">
                   Message
                 </label>
                 <textarea
