@@ -1,29 +1,17 @@
-import { useState, useEffect } from 'react';
-
+import React from "react";
+import Typewriter from "typewriter-effect";
 const TypingEffect = () => {
-  const [text, setText] = useState('');
-  const name = "The Great GYM";
-  let index = 1;
-
-  useEffect(() => {
-    const typeWriter = () => {
-      let newTitle = name.slice(0, index);
-      setText(newTitle);
-
-      index > name.length ? (index = 1) : index++;
-
-      setTimeout(() => typeWriter(), 2000);
-    };
-
-    typeWriter();
-
-    return () => clearTimeout(typeWriter);
-  }, []);
-
   return (
-    <h1 className="main_heading left-[50px] self-center font-semibold whitespace-nowrap dark:text-white absolute text-lg">
-      {text}
-    </h1>
+    <div className="absolute left-[50px] text-2xl font-semibold capitalize">
+      <Typewriter
+        options={{
+          strings: ["World","best","web site"],
+          autoStart: true,
+          loop: true,
+          delay: 75,
+        }}
+      />
+    </div>
   );
 };
 

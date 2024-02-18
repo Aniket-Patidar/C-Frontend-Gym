@@ -1,46 +1,41 @@
-// components/GoToTop.js
-
 import { useEffect, useState } from "react";
-import { FaArrowUp } from "react-icons/fa";
 
-const GoToTop = () => {
-  const [isVisible, setIsVisible] = useState(true);
-
-  const goToTop = () => {
-    console.log("click");
-    window.scrollTo({ top: 0, behavior: "auto" });
-  };
-
-  const listenToScroll = () => {
-    console.log("listenToScroll");
-    const heightToHide = 20;
-    const winScroll =
-      document.body.scrollTop || document.documentElement.scrollTop;
-
-    if (winScroll > heightToHide) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
+const ScrollToTopButton = () => {
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", listenToScroll);
-    return () => window.removeEventListener("scroll", listenToScroll);
+    const toggleVisibility = () => {
+      // if the user scrolls down, show the button
+      window.scrollY > 500 ? setIsVisible(true) : setIsVisible(false);
+    };
+    // listen for scroll events
+    window.addEventListener("scroll", toggleVisibility);
+
+    // clear the listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
   }, []);
 
+  // handles the animation when scrolling to the top
+  const scrollToTop = () => {
+    isVisible &&
+      window.scrollTo({
+        top: 0,
+        behavior: "auto",
+      });
+  };
+
   return (
-    <>
-      {isVisible && (
-        <div
-          className="fixed bottom-10 right-10 w-[40px] h-[40px] bg-blue-500 text-white flex justify-center items-center rounded-full cursor-pointer"
-          onClick={goToTop}
-        >
-          <FaArrowUp className="text-2xl" />
-        </div>
-      )}
-    </>
+    <button
+      className={`fixed bottom-4 right-4 rounded-full p-2 outline-none transition-opacity duration-200 ${
+        isVisible ? "opacity-100" : "opacity-0"
+      }`}
+      onClick={scrollToTop}
+    >
+      jnASdjlfwrn
+    </button>
   );
 };
 
-export default GoToTop;
+export default ScrollToTopButton;

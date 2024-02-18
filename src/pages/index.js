@@ -34,7 +34,6 @@ export default function Home() {
         </Link>
       </div>
       <Footer></Footer>
-      <ScrollToTopButton />
     </div>
   )
 }

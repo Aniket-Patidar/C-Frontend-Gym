@@ -1,6 +1,7 @@
 import CustomCursor from '@/components/Courser'
 import HomeLoader from '@/components/HomeLoader';
 import LoadingPage from '@/components/LoadingPage';
+import ScrollToTopButton from '@/components/ScrollButton';
 import '@/styles/globals.css'
 import { Router } from 'next/router';
 import { useEffect, useState } from 'react';
@@ -18,7 +19,6 @@ export default function App({ Component, pageProps }) {
   Router.events.on('routeChangeError', () => setLoading(false));
 
   useEffect(() => {
-
     setLoading(false)
   }, []);
 
