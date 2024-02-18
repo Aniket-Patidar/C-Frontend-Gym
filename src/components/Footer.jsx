@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Lazy from "./Lazy";
 
 const Footer = () => {
   return (
@@ -96,7 +97,11 @@ const Footer = () => {
           <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="">
               <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
-                <img src="./images/logo.png" className="w-[20px] mr-1" alt="" />
+                <Lazy
+                  src="./images/logo.png"
+                  className="w-[20px] mr-1"
+                  alt=""
+                />
                 GYM
               </h6>
               <p>
@@ -110,22 +115,34 @@ const Footer = () => {
                 Products
               </h6>
               <p className="mb-4">
-                <Link href="#!" className="text-neutral-600 dark:text-neutral-200">
+                <Link
+                  href="#!"
+                  className="text-neutral-600 dark:text-neutral-200"
+                >
                   Angular
                 </Link>
               </p>
               <p className="mb-4">
-                <Link href="#!" className="text-neutral-600 dark:text-neutral-200">
+                <Link
+                  href="#!"
+                  className="text-neutral-600 dark:text-neutral-200"
+                >
                   React
                 </Link>
               </p>
               <p className="mb-4">
-                <Link href="#!" className="text-neutral-600 dark:text-neutral-200">
+                <Link
+                  href="#!"
+                  className="text-neutral-600 dark:text-neutral-200"
+                >
                   Vue
                 </Link>
               </p>
               <p>
-                <Link href="#!" className="text-neutral-600 dark:text-neutral-200">
+                <Link
+                  href="#!"
+                  className="text-neutral-600 dark:text-neutral-200"
+                >
                   Laravel
                 </Link>
               </p>
@@ -135,22 +152,34 @@ const Footer = () => {
                 Useful links
               </h6>
               <p className="mb-4">
-                <Link href="#!" className="text-neutral-600 dark:text-neutral-200">
+                <Link
+                  href="#!"
+                  className="text-neutral-600 dark:text-neutral-200"
+                >
                   Pricing
                 </Link>
               </p>
               <p className="mb-4">
-                <Link href="#!" className="text-neutral-600 dark:text-neutral-200">
+                <Link
+                  href="#!"
+                  className="text-neutral-600 dark:text-neutral-200"
+                >
                   Settings
                 </Link>
               </p>
               <p className="mb-4">
-                <Link href="#!" className="text-neutral-600 dark:text-neutral-200">
+                <Link
+                  href="#!"
+                  className="text-neutral-600 dark:text-neutral-200"
+                >
                   Orders
                 </Link>
               </p>
               <p>
-                <Link href="#!" className="text-neutral-600 dark:text-neutral-200">
+                <Link
+                  href="#!"
+                  className="text-neutral-600 dark:text-neutral-200"
+                >
                   Help
                 </Link>
               </p>
@@ -222,7 +251,7 @@ const Footer = () => {
             className="font-semibold text-neutral-600 dark:text-neutral-400"
             href="#"
           >
-           GYM Website
+            GYM Website
           </Link>
         </div>
       </footer>

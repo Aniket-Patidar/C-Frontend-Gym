@@ -1,5 +1,6 @@
 // pages/about.js
 
+import Lazy from "@/components/Lazy";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import React from "react";
@@ -11,7 +12,7 @@ const About = () => {
       <Navbar></Navbar>
       <div className="bg-gray-900 min-h-screen py-12 px-4 mt-[7 0px]">
         <div className="max-w-4xl mx-auto text-center">
-          <img
+          <Lazy
             src="/images/1.jpg"
             alt="Gym"
             className="rounded-full w-32 h-32 mx-auto mb-8"

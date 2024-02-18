@@ -1,5 +1,6 @@
 // pages/packages.js
 
+import Lazy from "@/components/Lazy";
 import Navbar from "@/components/Navbar";
 import React from "react";
 
@@ -47,7 +48,7 @@ const Packages = () => {
 const PackageCard = ({ title, description, price, imageSrc }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
-      <img src={imageSrc} alt={title} className="w-full h-48 object-cover" />
+      <Lazy height={""} width={"100%"} src={imageSrc} alt={title} className="w-full h-48 object-cover" />
       <div className="p-6">
         <h2 className="text-xl font-semibold text-gray-800 mb-4">{title}</h2>
         <p className="text-gray-700 mb-4">{description}</p>
