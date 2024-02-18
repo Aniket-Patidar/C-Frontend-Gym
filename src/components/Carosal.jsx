@@ -1,5 +1,12 @@
 import React from "react";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Mousewheel,
+  Keyboard,
+  Autoplay,
+} from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -34,9 +41,9 @@ const Carosal = ({ Swiper, SwiperSlide }) => {
         pagination={true}
         mousewheel={true}
         keyboard={true}
-        autoplay={5000}
-        speed={800}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        autoplay={{ delay: 3500 }}
+        loop={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
         className="h-[85vh] w-[100vw] overflow-hidden"
       >
         {data.map(({ id, src }) => (

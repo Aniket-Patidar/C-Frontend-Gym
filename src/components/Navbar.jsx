@@ -11,6 +11,7 @@ import { GrServices } from "react-icons/gr";
 import { RiContactsFill } from "react-icons/ri";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import TypingEffect from "./TypingEffect";
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
@@ -30,15 +31,13 @@ const Navbar = () => {
             <p className="text-sm">Bhopal</p>
           </div>
         </div>
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative">
           <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img src="/images/logo.png" className="h-8" alt="Logo" />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              GYM
-            </span>
+            <TypingEffect></TypingEffect>
           </Link>
           <div className="flex gap-2 text-white items-center justify-center   md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <FaInstagram className="cursor-pointer iconsOpacity" />
