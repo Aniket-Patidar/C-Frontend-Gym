@@ -4,7 +4,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export const contractUs = () => {
+const contractUs = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -173,3 +173,5 @@ export const contractUs = () => {
     </div>
   );
 };
+export default contractUs
+
