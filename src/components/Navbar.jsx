@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -22,26 +22,40 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const router = useRouter();
 
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const shouldBeVisible = scrollY <= 0; // Hide when scrolled down 1px or more
+      setIsVisible(shouldBeVisible);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div>
-      <nav className="text-white bg-[#18191B]  w-full z-20 top-0 start-0 border-b   h-fit relative">
-        <div className="h-[35px] bg-[#18191B] flex  items-center justify-between  md:px-[9.2%]  hidden md:flex">
-          <div className="flex gap-[20px]">
+      <nav className="text-white bg-[#18191B]  w-full z-20 top-0 start-0 border-b   h-fit fixed">
+        <div className="max-w-screen-xl  flex-wrap items-center justify-between mx-auto p-4 relative bg-[#000000] md:bg-[#18191B]  hidden md:flex">
+          <div className="flex gap-[20px] ">
             <div className="flex items-center gap-1 text-sm ">
               <MdOutlineLocalPhone className="text-[#FAB207]" />
-              <p>Call Now :</p>
+              <p className="md:hidden lg:inline">Call Now :</p>
               <p className="text-sm">916266302210</p>
             </div>
             <div className="flex items-center gap-1 text-sm">
               <MdEmail className="text-[#FAB207]" />
-              <p>Email :</p>
+              <p className="md:hidden lg:inline">Email :</p>
               <p className="text-sm">916266302210</p>
             </div>
             <LocationIcon></LocationIcon>
 
             <div className="flex items-center gap-1 text-sm">
               <FaRegClock className="text-[#FAB207] font-semibold" />
-              <p> Working Hours :</p>
+              <p className="md:hidden lg:inline"> Working Hours :</p>
               <p className="text-sm">08:00-17:00</p>
             </div>
           </div>

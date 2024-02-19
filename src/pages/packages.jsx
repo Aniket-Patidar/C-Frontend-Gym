@@ -11,7 +11,7 @@ const Packages = () => {
   return (
     <>
       <Navbar></Navbar>
-      <div className="min-h-screen  bg-[#18191B] py-12 px-4">
+      <div className="min-h-screen  bg-[#18191B] py-12 mt-[100px] px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl font-bold text-white mb-8">
             Membership Packages
@@ -56,7 +56,7 @@ const PackageCard = ({ title, description, price, imageSrc, id }) => {
   const router = useRouter();
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="bg-[#dadadac9] rounded-lg shadow-md overflow-hidden">
       <Lazy
         height={""}
         width={"100%"}

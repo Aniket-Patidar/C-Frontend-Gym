@@ -57,12 +57,12 @@ const Tab = () => {
 
   // Define functional components for each tab content
   const T1Component = () => (
-    <div className="text-white flex items-center justify-center flex-wrap md:px-[2vw]">
+    <div className="text-white flex items-center justify-center lg:items-start lg:justify-start flex-wrap ">
       {data.map(({ src }, i) => {
         return (
-          <div className="w-[300px]  h-[200px] overflow-hidden ">
+          <div className="w-[307.21px]  h-[200px] overflow-hidden">
             <Lazy
-            style={{transition:"all 2s ease-in-out"}}
+              style={{ transition: "all 2s ease-in-out" }}
               src={src}
               key={i}
               className="w-[300px] object-cover object-center h-[200px] hover:scale-[1.2] animateTabImage "
@@ -73,15 +73,15 @@ const Tab = () => {
     </div>
   );
   const T2Component = () => (
-    <div className="text-white flex items-center justify-center flex-wrap md:px-[2vw]">
+    <div className="text-white flex items-center justify-center lg:items-start lg:justify-start flex-wrap ">
     {data.map(({ src }, i) => {
       return (
-        <div className="w-[300px]  h-[200px] overflow-hidden">
+        <div className="w-[307.21px]  h-[200px] overflow-hidden">
           <Lazy
-          style={{transition:"all 2s ease-in-out"}}
+            style={{ transition: "all 2s ease-in-out" }}
             src={src}
             key={i}
-            className="w-[300px] object-cover object-center h-[200px] hover:scale-[1.2] animateTabImage"
+            className="w-[300px] object-cover object-center h-[200px] hover:scale-[1.2] animateTabImage "
           ></Lazy>
         </div>
       );
@@ -89,28 +89,28 @@ const Tab = () => {
   </div>
   );
   const T3Component = () => (
-    <div className="text-white flex items-center justify-center flex-wrap md:px-[2vw] ">
-    {data.map(({ src }, i) => {
-      return (
-        <div className="w-[300px]  h-[200px] overflow-hidden">
-          <Lazy
-          style={{transition:"all 2s ease-in-out"}}
-            src={src}
-            key={i}
-            className="w-[300px] object-cover object-center h-[200px] hover:scale-[1.2] animateTabImage"
-          ></Lazy>
-        </div>
-      );
-    })}
-  </div>
+    <div className="text-white flex items-center justify-center lg:items-start lg:justify-start flex-wrap ">
+      {data.map(({ src }, i) => {
+        return (
+          <div className="w-[307.21px]  h-[200px] overflow-hidden">
+            <Lazy
+              style={{ transition: "all 2s ease-in-out" }}
+              src={src}
+              key={i}
+              className="w-[300px] object-cover object-center h-[200px] hover:scale-[1.2] animateTabImage "
+            ></Lazy>
+          </div>
+        );
+      })}
+    </div>
   );
   const T4Component = () => (
-    <div className="text-white flex items-center justify-center flex-wrap md:px-[2vw]">
+    <div className="text-white flex items-center justify-center lg:items-start lg:justify-start flex-wrap ">
     {data.map(({ src }, i) => {
       return (
-        <div className="w-[300px]  h-[200px] overflow-hidden">
+        <div className="w-[307.21px]  h-[200px] overflow-hidden">
           <Lazy
-          style={{transition:"all 2s ease-in-out"}}
+            style={{ transition: "all 2s ease-in-out" }}
             src={src}
             key={i}
             className="w-[300px] object-cover object-center h-[200px] hover:scale-[1.2] animateTabImage "
@@ -122,43 +122,43 @@ const Tab = () => {
   );
 
   return (
-    <div>
-      <div className="w-full h-fit flex-col bg-[#18191B] text-white  flex items-center">
-        <div className="flex gap-[100px]">
+    <div className="flex items-center   justify-center min-h-[75vh] py-[20px] bg-[#18191B]">
+      <div className="w-full h-full flex-col bg-[#18191B] text-white  flex items-center">
+        <div className="flex gap-[15px] font-[300] pb-[25px] text-[#545454] flex-wrap items-center justify-center">
           <div
             onClick={() => setCurrent(1)}
-            className={`tabs h-[40px] w-[130px] py-2 px-2 ${
+            className={`tabs h-[40px] w-[150px] py-2 px-2 ${
               current === 1 ? "bg-[#FAB207]" : ""
-            } text-center cursor-pointer`}
+            } text-center cursor-pointer text-sm align-center flex items-center justify-center`}
           >
             Tab 1
           </div>
           <div
             onClick={() => setCurrent(2)}
-            className={`tabs h-[40px] w-[130px] py-2 px-2 ${
+            className={`tabs h-[40px] w-[150px] py-2 px-2 ${
               current === 2 ? "bg-[#FAB207]" : ""
-            } text-center cursor-pointer`}
+            } text-center cursor-pointer text-sm align-center flex items-center justify-center`}
           >
             Tab 2
           </div>
           <div
             onClick={() => setCurrent(3)}
-            className={`tabs h-[40px] w-[130px] py-2 px-2 ${
+            className={`tabs h-[40px] w-[150px] py-2 px-2 ${
               current === 3 ? "bg-[#FAB207]" : ""
-            } text-center cursor-pointer`}
+            } text-center cursor-pointer text-sm align-center flex items-center justify-center`}
           >
             Tab 3
           </div>
           <div
             onClick={() => setCurrent(4)}
-            className={`tabs h-[40px] w-[130px] py-2 px-2 ${
+            className={`tabs h-[40px] w-[150px] py-2 px-2 ${
               current === 4 ? "bg-[#FAB207]" : ""
-            } text-center cursor-pointer`}
+            } text-center cursor-pointer text-sm align-center flex items-center justify-center`}
           >
             Tab 4
           </div>
         </div>
-        <div className="w-full min-h-[45vh]">{renderComponent()}</div>
+        <div className="w-full">{renderComponent()}</div>
       </div>
     </div>
   );
