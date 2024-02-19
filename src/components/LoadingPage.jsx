@@ -4,7 +4,7 @@ import React from "react";
 
 const LoadingPage = () => {
   return (
-    <div className="loadingContainer">
+    <div className="loadingContainer bg-[#18191B]">
       <div className="loadingContent">
         <div className="loadingText">
           <div>

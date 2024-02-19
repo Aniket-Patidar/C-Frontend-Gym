@@ -11,7 +11,7 @@ const Packages = () => {
   return (
     <>
       <Navbar></Navbar>
-      <div className="bg-c1 min-h-screen py-12 px-4">
+      <div className="min-h-screen  bg-[#18191B] py-12 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl font-bold text-white mb-8">
             Membership Packages
@@ -67,10 +67,10 @@ const PackageCard = ({ title, description, price, imageSrc, id }) => {
       <div className="p-6">
         <h2 className="text-xl font-semibold text-gray-800 mb-4">{title}</h2>
         <p className="text-gray-700 mb-4">{description}</p>
-        <p className="text-gray-700">Price: {price}</p>
+        <p className="text-gray-700 font-[700]">Price: {price}</p>
         <button
           onClick={(e) => router.push("/contractUs?id=" + id)}
-          className="mt-4 bg-c2 text-white py-2 px-4 rounded hover:bg-c3 transition duration-300  cool-button"
+          className="mt-4 bg-[#FAB207] text-white py-2 px-4  font-semibold transition duration-300 hover:bg-[#fab10797]"
         >
           Purchase
         </button>

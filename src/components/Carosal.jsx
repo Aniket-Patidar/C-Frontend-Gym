@@ -1,65 +1,143 @@
-import React from "react";
-import {
-  Navigation,
-  Pagination,
-  Mousewheel,
-  Keyboard,
-  Autoplay,
-} from "swiper/modules";
+import React, { useEffect, useRef } from "react";
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import Lazy from "./Lazy";
-import Image from "next/image";
+const Carosal = () => {
+  const sliderRef = useRef(null);
+  const click = useRef(null);
 
-const Carosal = ({ Swiper, SwiperSlide }) => {
-  const data = [
-    {
-      id: 1,
-      src: "/images/s1.jpg",
-    },
-    {
-      id: 2,
-      src: "/images/s2.jpg",
-    },
-    {
-      id: 3,
-      src: "/images/s3.jpg",
-    },
-    {
-      id: 4,
-      src: "/images/s4.jpg",
-    },
-  ];
+  useEffect(() => {
+    const activate = (e) => {
+      const items = document.querySelectorAll(".item");
+      if (e.target.matches(".next")) {
+        sliderRef.current.append(items[0]);
+      }
+      if (e.target.matches(".prev")) {
+        sliderRef.current.prepend(items[items.length - 1]);
+      }
+    };
+
+    click.current.addEventListener("click", activate);
+
+    return () => {
+      document.removeEventListener("click", activate, false);
+    };
+  }, []); 
 
   return (
-    <div className="w-[100vw] h-[84vh] overflow-hidden bg-c1">
-      <Swiper
-        cssMode={true}
-        navigation={true}
-        pagination={true}
-        mousewheel={true}
-        keyboard={true}
-        autoplay={{ delay: 3500 }}
-        loop={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-        className="h-[85vh] w-[100vw] overflow-hidden"
-      >
-        {data.map(({ id, src }) => (
-          <div className="" key={id}>
-            <SwiperSlide>
-              <Lazy
-                src={src}
-                height={"85vh"}
-                width={"100vw"}
-                className="h-full w-full object-cover object-center"
-                alt=""
-              />
-            </SwiperSlide>
-          </div>
-        ))}
-      </Swiper>
+    <div className="carosal  ">
+      <main ref={click}>
+        <ul className="slider" ref={sliderRef}>
+          <li
+            className="item"
+            style={{
+              backgroundImage:
+                'url("/images/s1.jpg")',
+            }}
+          >
+            <div className="content">
+              <h2 className="title">"Lossless Youths"</h2>
+              <p className="description">
+                {" "}
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Tempore fuga voluptatum, iure corporis inventore praesentium
+                nisi. Id laboriosam ipsam enim.
+              </p>
+              <button>Book A Demo</button>
+            </div>
+          </li>
+          <li
+            className="item"
+            style={{
+              backgroundImage:
+                'url("/images/s2.jpg")',
+            }}
+          >
+            <div className="content">
+              <h2 className="title">"Estrange Bond"</h2>
+              <p className="description">
+                {" "}
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Tempore fuga voluptatum, iure corporis inventore praesentium
+                nisi. Id laboriosam ipsam enim.
+              </p>
+              <button>Book A Demo</button>
+            </div>
+          </li>
+          <li
+            className="item"
+            style={{
+              backgroundImage:
+                'url("/images/s3.jpg")',
+            }}
+          >
+            <div className="content">
+              <h2 className="title">"The Gate Keeper"</h2>
+              <p className="description">
+                {" "}
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Tempore fuga voluptatum, iure corporis inventore praesentium
+                nisi. Id laboriosam ipsam enim.
+              </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li
+            className="item"
+            style={{
+              backgroundImage:
+                'url("/images/s4.jpg")',
+            }}
+          >
+            <div className="content">
+              <h2 className="title">"Last Trace Of Us"</h2>
+              <p className="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Tempore fuga voluptatum, iure corporis inventore praesentium
+                nisi. Id laboriosam ipsam enim.
+              </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li
+            className="item"
+            style={{
+              backgroundImage:
+                'url("/images/s5.jpg")',
+            }}
+          >
+            <div className="content">
+              <h2 className="title">"Urban Decay"</h2>
+              <p className="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Tempore fuga voluptatum, iure corporis inventore praesentium
+                nisi. Id laboriosam ipsam enim.
+              </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li
+            className="item"
+            style={{
+              backgroundImage:
+                'url("/images/s6.jpg")',
+            }}
+          >
+            <div className="content">
+              <h2 className="title">"The Migration"</h2>
+              <p className="description">
+                {" "}
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Tempore fuga voluptatum, iure corporis inventore praesentium
+                nisi. Id laboriosam ipsam enim.
+              </p>
+              <button>Read More</button>
+            </div>
+          </li>
+        </ul>
+        <nav className="nav ">
+          <ion-icon className="btn prev" name="arrow-back-outline" />
+          <ion-icon className="btn next" name="arrow-forward-outline" />
+        </nav>
+      </main>
     </div>
   );
 };

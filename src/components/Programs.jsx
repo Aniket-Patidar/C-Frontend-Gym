@@ -1,50 +1,75 @@
 import React from "react";
-import Lazy from "./Lazy";
 
 const Programs = () => {
-  var data = [
-    {
-      id: 1,
-      src: "/images/1.jpg",
-      title: " Basic Crossfit",
-    },
-    {
-      id: 2,
-      src: "/images/2.jpg",
-      title: " Basic Crossfit",
-    },
-    {
-      id: 3,
-      src: "/images/3.jpg",
-      title: " Basic Crossfit",
-    },
-    {
-      id: 4,
-      src: "/images/4.jpg",
-      title: " Basic Crossfit",
-    },
-  ];
-
   return (
-    <div className="h-fit py-5 flex gap-[20px]  items-center justify-center md:justify-evenly flex-wrap w-[100vw] ">
-      {data.map(({ src, id, title }) => {
-        return (
-          <div className="relative w-[85vw] md:h-[440px] md:w-[300px] overflow-hidden bg-c1" key={id}>
-            <Lazy
-              style={{ transition: "all 1s ease-in-out" }}
-              className="w-full h-full object-cover object-center hover:scale-150 transitionTransform"
-              src={src}
-              height={"100%"}
-              width={"100%"}
+    <div className="flex flex-col justify-evenly items-center bg-[#18191B]">
+      <p className="text-[30px] font-thin  ">What We Do</p>
+      <div>
+        <div className="flex items-center gap-2 ">
+          <div className="w-[35vw] h-[1px] bg-[#dadada]"></div>
+          <div className="w-[10px] h-[10px] bg-[#DCB800] border-none rounded-full"></div>
+          <div className="w-[35vw] h-[1px] bg-[#dadada]"></div>
+        </div>
+      </div>
 
-              alt=""
-            />
-            <p className="uppercase font-sans font-extrabold text-[25px] absolute bottom-[3%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-center object-cover object-center">
-              {title}
-            </p>
-          </div>
-        );
-      })}
+      <div className="flex gap-[30px] mt-3">
+        <div className="w-[350px] flex flex-col gap-3">
+          <p>
+            {" "}
+            <span className="text-[#FAB207]">RESIDENTIAL</span> DESIGN
+          </p>
+          <p className="text-[13px]">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia
+          </p>
+          <img
+            src="/images/s1.jpg"
+            className="w-full h-[200px] object-cover object-center"
+            alt=""
+          />
+        </div>
+
+        <div className="w-[350px] flex flex-col gap-3">
+          <p>
+            {" "}
+            <span className="text-[#FAB207]">RESIDENTIAL</span> DESIGN
+          </p>
+          <p className="text-[13px]">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia
+          </p>
+          <img
+            src="/images/s2.jpg"
+            className="w-full h-[200px] object-cover object-center"
+            alt=""
+          />
+        </div>
+
+        <div className="w-[350px] flex flex-col gap-3">
+          <p>
+            {" "}
+            <span className="text-[#FAB207]">RESIDENTIAL</span> DESIGN
+          </p>
+          <p className="text-[13px]">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia
+          </p>
+          <img
+            src="/images/s3.jpg"
+            className="w-full h-[200px] object-cover object-center"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
   );
 };

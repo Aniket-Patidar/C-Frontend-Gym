@@ -18,8 +18,9 @@ const LocationIcon = () => {
 
   return (
     <div onClick={handleClick} style={{ cursor: "pointer" }}>
-      <div className="flex items-center gap-1">
-        <IoLocationSharp className="text-c2" />
+      <div className="flex items-center gap-1 text-sm">
+        <IoLocationSharp className="text-[#FAB207]" />
+        {/* <p>Location</p> */}
         <p className="text-sm">Bhopal</p>
       </div>
     </div>

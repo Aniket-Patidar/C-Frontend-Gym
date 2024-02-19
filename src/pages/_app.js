@@ -32,16 +32,15 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       {/* {!isRevealTriggered && <LoadingAnimation />} */}
-  
-        {loading ? (
-          <HomeLoader />
-        ) : (
-          <>
-            <Component {...pageProps} />
-            <CustomCursor />
-          </>
-        )}
+
+      {loading ? (
+        <HomeLoader />
+      ) : (
+        <>
+          <Component {...pageProps} />
+        </>
+      )}
     </>
   );
-c  
+  c
 }
