@@ -13,6 +13,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import TypingEffect from "./TypingEffect";
 import Lazy from "./Lazy";
+import WhatsAppButton from "./whatsup";
+import LocationIcon from "./Location";
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
@@ -27,10 +29,7 @@ const Navbar = () => {
             <p className="text-sm">+916266302210</p>
           </div>
 
-          <div className="flex items-center gap-1">
-            <IoLocationSharp className="text-c2" />
-            <p className="text-sm">Bhopal</p>
-          </div>
+          <LocationIcon></LocationIcon>
         </div>
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative">
           <Link
@@ -43,7 +42,8 @@ const Navbar = () => {
           <div className="flex gap-2 text-white items-center justify-center   md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <FaInstagram className="cursor-pointer iconsOpacity" />
             <FaFacebook className="cursor-pointer iconsOpacity" />
-            <FaWhatsapp className="cursor-pointer iconsOpacity" />
+            <WhatsAppButton></WhatsAppButton>
+
             <RxHamburgerMenu
               onClick={() => setNavbar(!navbar)}
               className="cursor-pointer  md:hidden"
@@ -83,7 +83,7 @@ const Navbar = () => {
                       router.pathname === "/packages" ? "active" : ""
                     }`}
                   >
-                    Services
+                    Packages
                   </Link>
                 </li>
                 <li>
@@ -114,7 +114,7 @@ const Navbar = () => {
             </div>
             <div className="flex gap-1 hover:opacity-[0.5]">
               <GrServices />
-              <Link href="/packages">Services</Link>
+              <Link href="/packages">Packages</Link>
             </div>
             <div className="flex gap-1 hover:opacity-[0.5]">
               <RiContactsFill />

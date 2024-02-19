@@ -1,5 +1,6 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -11,11 +12,39 @@ const ContactUs = () => {
     number: "",
     message: "",
   });
+  const router = useRouter();
+  let { id } = router.query;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
+
+  var MsgData = [
+    {
+      message: "I want to buy this packet 1 month Package , please contact us",
+    },
+    {
+      message: "I want to buy this packet  4 month Package, please contact us",
+    },
+    {
+      message: "I want to buy this packet  6 month Package, please contact us",
+    },
+    {
+      message:
+        "I want to buy this packet  12 month Package , please contact us",
+    },
+  ];
+
+  useEffect(() => {
+    id = parseInt(id);
+    if (id && id < MsgData.length) {
+      setFormData((prevData) => ({
+        ...prevData,
+        ...MsgData[id],
+      }));
+    }
+  }, [id]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -65,8 +94,9 @@ const ContactUs = () => {
                 marginHeight={0}
                 marginWidth={0}
                 scrolling="no"
-                src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.380256349964!2d77.40270107503481!3d23.265628907214715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c683cc88a3d9b%3A0xd1efdc39648f68c8!2sNadra%20Bus%20Stand!5e0!3m2!1sen!2sin!4v1708316222242!5m2!1sen!2sin"
               />
+
 
               <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
                 <div className="lg:w-1/2 px-6">
@@ -173,5 +203,4 @@ const ContactUs = () => {
     </div>
   );
 };
-export default ContactUs
-
+export default ContactUs;
