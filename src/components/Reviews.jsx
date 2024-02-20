@@ -27,7 +27,7 @@ const Reviews = () => {
       />
 
       {/* Overlay */}
-      <div className="w-full h-[84vh] absolute top-0 bg-[#93979b] opacity-40"></div>
+      <div className="w-full h-[84vh] absolute top-0 bg-black opacity-40"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-screen-xl mx-auto   h-full flex justify-center items-center">

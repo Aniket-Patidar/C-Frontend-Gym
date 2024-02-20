@@ -11,7 +11,8 @@ const Packages = () => {
   return (
     <>
       <Navbar></Navbar>
-      <div className="min-h-screen  bg-[#18191B] py-12 mt-[100px] px-4">
+
+      <div className="min-h-screen  bg-[#18191B] py-12 mt-[25px] md:mt-[100px] px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl font-bold text-white mb-8">
             Membership Packages
@@ -56,7 +57,7 @@ const PackageCard = ({ title, description, price, imageSrc, id }) => {
   const router = useRouter();
 
   return (
-    <div className="bg-[#dadadac9] rounded-lg shadow-md overflow-hidden">
+    <div className="bg-[#8A8A8E] rounded-lg shadow-md overflow-hidden">
       <Lazy
         height={""}
         width={"100%"}
@@ -65,12 +66,12 @@ const PackageCard = ({ title, description, price, imageSrc, id }) => {
         className="w-full h-48 object-cover"
       />
       <div className="p-6">
-        <h2 className="text-xl font-semibold text-gray-800 mb-4">{title}</h2>
+        <h2 className="text-xl  text-gray-800 mb-4 font-[900]">{title}</h2>
         <p className="text-gray-700 mb-4">{description}</p>
         <p className="text-gray-700 font-[700]">Price: {price}</p>
         <button
           onClick={(e) => router.push("/contractUs?id=" + id)}
-          className="mt-4 bg-[#FAB207] text-white py-2 px-4  font-semibold transition duration-300 hover:bg-[#fab10797]"
+          className="mt-4 bg-[#18191B] text-white py-2 px-4  font-[400] rounded-md transition duration-300 hover:bg-[#18191bb8]"
         >
           Purchase
         </button>

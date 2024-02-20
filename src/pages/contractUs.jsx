@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import React from "react";
 
@@ -7,7 +8,7 @@ const Contact = () => {
       <Navbar></Navbar>
 
       <div className="flex items-center justify-center bg-[#18191B] w-full">
-        <div className="px-[65px] bg-[#18191B] lg:h-[86vh] overflow-hidden text-white mt-[100px] max-w-screen-xl w-full  ">
+        <div className="px-[65px] bg-[#18191B] lg:h-fit overflow-hidden text-white mt-[100px] max-w-screen-xl w-full  ">
           <section className="relative z-10 overflow-hidden py-[45px] dark:bg-dark">
             <div className="container">
               <div className="-mx-4 flex flex-wrap lg:justify-between">
@@ -117,7 +118,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-                  <div className="relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12">
+                  <div className="relative rounded-lg bg-[#8a8a8e] p-8 shadow-lg dark:bg-dark-2 sm:p-12">
                     <form>
                       <ContactInputBox
                         type="text"
@@ -143,29 +144,14 @@ const Contact = () => {
                       <div>
                         <button
                           type="submit"
-                          className="w-full rounded border border-primary bg-primary p-3 text-black transition hover:bg-opacity-90"
+                          className="w-full rounded-[12px] bg-primary p-3 text-white bg-black transition"
                         >
                           Send Message
                         </button>
                       </div>
                     </form>
                     <div>
-                      <span className="absolute -right-9 -top-10 z-[-1]">
-                        <svg
-                          width={100}
-                          height={100}
-                          viewBox="0 0 100 100"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
-                            fill="#FAB207"
-                          />
-                        </svg>
-                      </span>
+                      <span className="absolute -right-9 -top-10 z-[-1]"></span>
                       <span className="absolute -right-10 top-[90px] z-[-1]">
                         <svg
                           width={34}
@@ -964,6 +950,22 @@ const Contact = () => {
           </section>
         </div>
       </div>
+
+      <div className="h-[350px] w-full">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3665.3899137041003!2d77.4053333!3d23.2652778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDE1JzU1LjAiTiA3N8KwMjQnMTkuMiJF!5e0!3m2!1sen!2sin!4v1708426491295!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style={{ border: "0" }} // Use curly braces for inline styles
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div className="bg-[#18191B]">
+        <Footer />
+      </div>
     </>
   );
 };
@@ -978,7 +980,7 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
           rows={row}
           placeholder={placeholder}
           name={name}
-          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          className="w-full bg-[#ffffffe1] text-black font-semibold resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
           defaultValue={defaultValue}
         />
       </div>
@@ -994,7 +996,7 @@ const ContactInputBox = ({ type, placeholder, name }) => {
           type={type}
           placeholder={placeholder}
           name={name}
-          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          className="bg-[#ffffffe1] text-black font-semibold w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3  dark:text-dark-6"
         />
       </div>
     </>

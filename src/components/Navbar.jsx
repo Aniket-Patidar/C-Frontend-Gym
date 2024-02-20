@@ -71,10 +71,10 @@ const Navbar = () => {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative bg-[#000000] md:bg-[#18191B]">
           <Link
             href="/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
+            className="flex items-center justify-center  space-x-3 rtl:space-x-reverse "
           >
-            <Lazy src="/images/logo.png" className="h-8" alt="Logo" />
-            <TypingEffect></TypingEffect>
+            <Lazy src="/images/logo.png" className="h-8 " alt="Logo" />
+            <h1 className="text-md uppercase font-[500]">fitness Icon Gym</h1>
           </Link>
 
           <div
@@ -82,7 +82,7 @@ const Navbar = () => {
             id="navbar-sticky"
           >
             <nav>
-              <ul className=" md:flex flex-col font-semibold text-lg text-white bg-transparent p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+              <ul className="font-[400] md:flex flex-col text-lg text-white bg-transparent p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                 <li className="flex items-center gap-2">
                   <span className="w-[8px] h-[8px] inline-block bg-[#FAB207] rounded-full border-none"></span>
                   <Link
