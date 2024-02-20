@@ -41,7 +41,7 @@ const Navbar = () => {
       <nav className="text-white bg-[#18191B]  w-full z-20 top-0 start-0 border-b   h-fit fixed">
         <div className="max-w-screen-xl  flex-wrap items-center justify-between mx-auto p-4 relative bg-[#000000] md:bg-[#18191B]  hidden md:flex">
           <div className="flex gap-[20px] ">
-            <div className="flex items-center gap-1 text-sm ">
+            <div className="flex items-center gap-1 text-sm">
               <MdOutlineLocalPhone className="text-[#FAB207]" />
               <p className="md:hidden lg:inline">Call Now :</p>
               <p className="text-sm">916266302210</p>

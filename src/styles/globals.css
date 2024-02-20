@@ -751,9 +751,10 @@ html {
   width: 100%;
   background-color: #191919;
   display: flex;
-  justify-content: center;
+  
+  justify-content: space-between;
   gap: 80px;
-  padding: 20px 40px;
+  padding: 20px 0px;
   color: #fff;
 }
 

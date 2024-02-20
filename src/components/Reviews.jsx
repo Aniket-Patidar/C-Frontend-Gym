@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Review from "./Review";
 
 const Reviews = () => {
   const settings = {
@@ -32,7 +33,7 @@ const Reviews = () => {
       <div className="relative z-10 max-w-screen-xl mx-auto   h-full flex justify-center items-center">
         <div className="text-white">
           <div className="flex flex-col justify-between max-w-screen-xl w-full items-center">
-            <p className="text-[30px] font-thin uppercase">What We Do</p>
+            <p className="text-[30px] font-thin uppercase">CUSTOMER SAYS</p>
             <div>
               <div className="flex items-center gap-2   my-[25px]">
                 <div className="w-[20vw] h-[1px] bg-[#dadada8f]"></div>
@@ -41,23 +42,7 @@ const Reviews = () => {
               </div>
             </div>
 
-            <div className="text-white relative z-20">
-              <h2>Carousel Component</h2>
-              <Slider {...settings}>
-                <div>
-                  <h3 className="bg-red-50 h-[100px]">FIRST SLIDE</h3>
-                </div>
-                <div>
-                  <h3>SECOND SLIDE</h3>
-                </div>
-                <div>
-                  <h3>THIRD SLIDE</h3>
-                </div>
-                <div>
-                  <h3>FORTH SLIDE</h3>
-                </div>
-              </Slider>
-            </div>
+              <Review></Review>
           </div>
         </div>
       </div>

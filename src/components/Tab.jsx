@@ -122,7 +122,7 @@ const Tab = () => {
   );
 
   return (
-    <div className="flex items-center   justify-center min-h-[75vh] py-[20px] bg-[#18191B]">
+    <div className="flex items-start   justify-center min-h-[75vh] py-[20px] bg-[#18191B]">
       <div className="w-full h-full flex-col bg-[#18191B] text-white  flex items-center">
         <div className="flex gap-[15px] font-[300] pb-[25px] text-[#545454] flex-wrap items-center justify-center">
           <div
