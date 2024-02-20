@@ -41,8 +41,7 @@ const Reviews = () => {
                 <div className="w-[20vw] h-[1px] bg-[#dadada8f]"></div>
               </div>
             </div>
-
-              <Review></Review>
+            <Review></Review>
           </div>
         </div>
       </div>
