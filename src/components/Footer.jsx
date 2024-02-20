@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
         {/* </div> */}
         <div className="part-4  relative right-0">
-          <h1>Let's Talk</h1>
+          <h1>Let&apos;s Talk</h1>
           <ul>
             <li className="flex items-center gap-1 ">
               <RiMapPinLine className="text-[#FAB207] cursor-pointer" /> Office
@@ -75,8 +75,8 @@ const Footer = () => {
       <div className="flex items-center justify-center bg-black">
         <footer className="text-white py-4  max-w-screen-xl ">
           <div className="flex w-full items-center justify-between   ">
-            <div className="">
-              <h1>© 2024 FoodoSnx -Chips</h1>
+            <div className="md:-ml-[30px]">
+              <h1 className="uppercase">© 2024 Fitness Icon Gym</h1>
             </div>
 
             <div className="flex items-center gap-4">

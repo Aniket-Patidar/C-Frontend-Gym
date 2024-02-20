@@ -69,11 +69,10 @@ const Tab = () => {
       <div className="text-white flex items-center justify-center lg:items-start lg:justify-start flex-wrap gap-0">
         {data.map(({ src }, i) => {
           return (
-            <div className="w-[30vw]  md:w-[20vw] h-[200px] overflow-hidden  ">
+            <div className="w-[30vw]  md:w-[20vw] h-[200px] overflow-hidden" key={i}>
               <Lazy
                 style={{ transition: "all 2s ease-in-out" }}
                 src={src}
-                key={i}
                 className="w-[30vw] md:w-[20vw] object-cover object-center h-[200px] hover:scale-[1.2] animateTabImage "
               ></Lazy>
             </div>
@@ -87,11 +86,10 @@ const Tab = () => {
     <div className="text-white flex items-center justify-center lg:items-start lg:justify-start flex-wrap gap-0">
       {data.map(({ src }, i) => {
         return (
-          <div className="w-[30vw]  md:w-[20vw] h-[200px] overflow-hidden  ">
+          <div className="w-[30vw]  md:w-[20vw] h-[200px] overflow-hidden" key={i}>
             <Lazy
               style={{ transition: "all 2s ease-in-out" }}
               src={src}
-              key={i}
               className="w-[30vw] md:w-[20vw] object-cover object-center h-[200px] hover:scale-[1.2] animateTabImage "
             ></Lazy>
           </div>
@@ -105,11 +103,10 @@ const Tab = () => {
     <div className="text-white flex items-center justify-center lg:items-start lg:justify-start flex-wrap gap-0">
       {data.map(({ src }, i) => {
         return (
-          <div className="w-[30vw]  md:w-[20vw] h-[200px] overflow-hidden  ">
+          <div className="w-[30vw]  md:w-[20vw] h-[200px] overflow-hidden  " key={i}>
             <Lazy
               style={{ transition: "all 2s ease-in-out" }}
               src={src}
-              key={i}
               className="w-[30vw] md:w-[20vw] object-cover object-center h-[200px] hover:scale-[1.2] animateTabImage "
             ></Lazy>
           </div>
@@ -123,11 +120,10 @@ const Tab = () => {
       <div className="text-white flex items-center justify-center lg:items-start lg:justify-start flex-wrap gap-0">
         {data.map(({ src }, i) => {
           return (
-            <div className="w-[30vw]  md:w-[20vw] h-[200px] overflow-hidden  ">
+            <div className="w-[30vw]  md:w-[20vw] h-[200px] overflow-hidden" key={i}>
               <Lazy
                 style={{ transition: "all 2s ease-in-out" }}
                 src={src}
-                key={i}
                 className="w-[30vw] md:w-[20vw] object-cover object-center h-[200px] hover:scale-[1.2] animateTabImage "
               ></Lazy>
             </div>

@@ -43,7 +43,7 @@ const About = () => {
                 <BulletPoint>Group Fitness Classes</BulletPoint>
                 <BulletPoint>Functional Training</BulletPoint>
               </div>
-              <div className="flex flex-col md:w-1/2 gap-2">
+              <div className="flex flex-col md:w-1/2 gap-2 mt-2 md:mt-0">
                 <BulletPoint>Flexibility and Mobility</BulletPoint>
                 <BulletPoint>Flexibility</BulletPoint>
               </div>
