@@ -21,7 +21,7 @@ const Contact = () => {
                       GET IN TOUCH WITH US
                     </h2>
                     <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
-                    We're excited to hear from you! Whether you're ready to begin your fitness journey or have questions about our services, our team is here to help you every step of the way. Feel free to get in touch using the contact details provided below.
+                    We&apos;re excited to hear from you! Whether you&apos;re ready to begin your fitness journey or have questions about our services, our team is here to help you every step of the way. Feel free to get in touch using the contact details provided below.
                     </p>
                     <div className="mb-8 flex w-full max-w-[370px]">
                       <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">

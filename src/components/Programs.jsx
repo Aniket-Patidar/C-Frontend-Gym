@@ -21,8 +21,8 @@ const Programs = () => {
 
             <p className="text-[10px] font-extralight md:text-[13px]">
               We understand that every individual has unique fitness goals and
-              needs. That's why we offer personalized fitness solutions tailored
-              to each member. Whether you're aiming to lose weight, build
+              needs. That&apos;s why we offer personalized fitness solutions tailored
+              to each member. Whether you&apos;re aiming to lose weight, build
               muscle, or improve your overall health, our experienced trainers
               will work closely with you to develop a customized workout plan
               that suits your lifestyle and preferences.
@@ -44,9 +44,9 @@ const Programs = () => {
             <p className="text-[13px]">
               Our team of certified trainers is committed to helping you achieve
               your fitness goals safely and effectively. With their expertise
-              and guidance, you'll receive personalized coaching, technique
+              and guidance, you&apos;ll receive personalized coaching, technique
               correction, and motivational support every step of the way.
-              Whether you're new to exercise or a seasoned athlete, our trainers
+              Whether you&apos;re new to exercise or a seasoned athlete, our trainers
               are here to challenge you, inspire you, and celebrate your
               progress.
             </p>
@@ -65,7 +65,7 @@ const Programs = () => {
             </p>
             <p className="text-[13px]">
               At The Fitness Icon Gym, we believe that a strong sense of
-              community is essential for long-term success in fitness. That's
+              community is essential for long-term success in fitness. That&apos;s
               why we foster a supportive and inclusive environment where members
               can connect, motivate each other, and celebrate their
               achievements. From group classes to social events, our gym
