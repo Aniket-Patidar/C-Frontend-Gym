@@ -44,19 +44,21 @@ const Navbar = () => {
             <div className="flex items-center gap-1 text-sm">
               <MdOutlineLocalPhone className="text-[#FAB207]" />
               <p className="md:hidden lg:inline">Call Now :</p>
-              <p className="text-sm">916266302210</p>
+              <p className="text-sm">9827566365</p>
             </div>
             <div className="flex items-center gap-1 text-sm">
               <MdEmail className="text-[#FAB207]" />
               <p className="md:hidden lg:inline">Email :</p>
-              <p className="text-sm">916266302210</p>
+              <p className="text-sm"> 
+              icongym@gmail.com
+              </p>
             </div>
             <LocationIcon></LocationIcon>
 
             <div className="flex items-center gap-1 text-sm">
               <FaRegClock className="text-[#FAB207] font-semibold" />
               <p className="md:hidden lg:inline"> Working Hours :</p>
-              <p className="text-sm">08:00-17:00</p>
+              <p className="text-sm">08:00am-9:00pm</p>
             </div>
           </div>
           <div className="flex gap-4 text-white items-center justify-center   md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -73,8 +75,8 @@ const Navbar = () => {
             href="/"
             className="flex items-center justify-center  space-x-3 rtl:space-x-reverse "
           >
-            <Lazy src="/images/logo.png" className="h-8 " alt="Logo" />
-            <h1 className="text-md uppercase font-[500]">fitness Icon Gym</h1>
+            <Lazy src="/logo.png" className="h-10 w-[80px] md:w-[100px] object-cover object-fit " alt="Logo" />
+            {/* <h1 className="text-md uppercase font-[500]">fitness Icon Gym</h1> */}
           </Link>
 
           <div

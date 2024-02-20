@@ -14,9 +14,8 @@ const Footer = () => {
   return (
     <div className="">
       <div className="flex items-center justify-center">
-
-      <div className="sub-footer  justify-between  w-full  max-w-screen-xl">
-        {/* <div className="flex gap-[34px] flex-wrap"> */}
+        <div className="sub-footer  justify-between  w-full  max-w-screen-xl">
+          {/* <div className="flex gap-[34px] flex-wrap"> */}
           <div className="part-1">
             <h1>Popular Locations</h1>
             <ul>
@@ -47,29 +46,26 @@ const Footer = () => {
               <li>Terms & Conditions</li>
             </ul>
           </div>
-        {/* </div> */}
-        <div className="part-4  relative right-0">
-          <h1>Let&apos;s Talk</h1>
-          <ul>
-            <li className="flex items-center gap-1 ">
-              <RiMapPinLine className="text-[#FAB207] cursor-pointer" /> Office
-              Chowdhry Mohalla near Munazir Building
-            </li>
-            <li className="flex items-center gap-1 ">
-              <MdEmail className="text-[#FAB207] cursor-pointer" />{" "}
-              aniketpatidar76@gmail.com
-            </li>
-            <li className="flex items-center gap-1 ">
-              <RiPhoneLine className="text-[#FAB207] cursor-pointer" />{" "}
-              8100381856
-            </li>
-            <li className="flex items-center gap-1 ">
-              <RiPhoneLine className="text-[#FAB207] cursor-pointer" />{" "}
-              5656569896
-            </li>
-          </ul>
+          {/* </div> */}
+          <div className="part-4  relative right-0">
+            <h1>Let&apos;s Talk</h1>
+            <ul>
+              <li className="flex items-center gap-1 ">
+                <RiMapPinLine className="text-[#FAB207] cursor-pointer" /> GOKUL
+                MARKET, MITTAL COLLEGE
+              </li>
+              <li className="flex items-center gap-1 ">
+                <MdEmail className="text-[#FAB207] cursor-pointer" />{" "}
+                icongym@gmail.com
+              </li>
+              <li className="flex items-center gap-1 ">
+                <RiPhoneLine className="text-[#FAB207] cursor-pointer" />{" "}
+                9827566365
+              </li>
+             
+            </ul>
+          </div>
         </div>
-      </div>
       </div>
 
       <div className="flex items-center justify-center bg-black">

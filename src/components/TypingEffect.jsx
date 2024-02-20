@@ -5,7 +5,7 @@ const TypingEffect = () => {
     <div className="absolute left-[50px] text-2xl font-semibold capitalize">
       <Typewriter
         options={{
-          strings: ["World","best","web site"],
+          strings: ["word best gym", "is best", "is cous"],
           autoStart: true,
           loop: true,
           delay: 75,

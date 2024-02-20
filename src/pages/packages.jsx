@@ -20,29 +20,29 @@ const Packages = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <PackageCard
               title="1 Month Pack"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor est nec turpis luctus, eget condimentum mi finibus."
-              price="$50"
+              description="Get started on your fitness journey with access to our top-notch facilities and expert guidance for one month."
+              price="$3500"
               imageSrc="/images/1.jpg"
               id={1}
             />
             <PackageCard
               title="4 Month Pack"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor est nec turpis luctus, eget condimentum mi finibus."
-              price="$180"
+              description="Commit to your fitness goals with extended access and personalized training plans over four months."
+              price="$12,500"
               imageSrc="/images/2.jpg"
               id={2}
             />
             <PackageCard
               title="6 Month Pack"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor est nec turpis luctus, eget condimentum mi finibus."
-              price="$250"
+              description="Elevate your fitness journey with unlimited access, ongoing support, and exclusive discounts for six months."
+              price="$17,500"
               imageSrc="/images/3.jpg"
               id={3}
             />
             <PackageCard
               title="12 Month Pack"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor est nec turpis luctus, eget condimentum mi finibus."
-              price="$450"
+              description="Invest in long-term wellness with a full year of unrestricted access, personalized nutrition guidance, and priority booking."
+              price="$31,000"
               imageSrc="/images/4.jpg"
               id={4}
             />

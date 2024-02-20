@@ -20,60 +20,85 @@ const Tab = () => {
     }
   };
 
+  var data1 = [
+    {
+      src: "./org/1.jpeg",
+    },
+    {
+      src: "./org/2.jpeg",
+    },
+    {
+      src: "./org/3.jpeg",
+    },
+    {
+      src: "./org/4.jpeg",
+    },
+    {
+      src: "./org/5.jpeg",
+    },
+    {
+      src: "./org/6.jpeg",
+    },
+    {
+      src: "./org/7.jpeg",
+    },
+    {
+      src: "./org/9.jpeg",
+    },
+    {
+      src: "./org/10.jpeg",
+    },
+    {
+      src: "./org/13.jpeg",
+    },
+  ];
+
+
   var data = [
     {
+      src: "./images/1.jpg",
+    },
+    {
+      src: "./images/2.jpg",
+    },
+    {
+      src: "./images/3.jpg",
+    },
+    {
       src: "./images/s1.jpg",
-      id: 1,
     },
     {
       src: "./images/s2.jpg",
-      id: 2,
     },
     {
       src: "./images/s3.jpg",
-      id: 3,
     },
     {
       src: "./images/s4.jpg",
-      id: 4,
     },
     {
       src: "./images/s5.jpg",
-      id: 5,
+    },
+    {
+      src: "./images/2.jpg",
     },
     {
       src: "./images/1.jpg",
-      id: 6,
-    },
-    {
-      src: "./images/s2.jpg",
-      id: 7,
-    },
-    {
-      src: "./images/4.jpg",
-      id: 8,
-    },
-    {
-      src: "./images/s5.jpg",
-      id: 5,
-    },
-    {
-      src: "./images/s3.jpg",
-      id: 5,
     },
   ];
+
 
   // Define functional components for each tab content
   const T1Component = () => (
     <div className="flex  items-center justify-center w-[100%] ">
       <div className="text-white flex items-center justify-center lg:items-start lg:justify-start flex-wrap gap-0">
-        {data.map(({ src }, i) => {
+        {data1.map(({ src }, i) => {
           return (
             <div className="w-[30vw]  md:w-[20vw] h-[200px] overflow-hidden" key={i}>
               <Lazy
                 style={{ transition: "all 2s ease-in-out" }}
                 src={src}
-                className="w-[30vw] md:w-[20vw] object-cover object-center h-[200px] hover:scale-[1.2] animateTabImage "
+                className="w-[30vw] md:w-[20vw] object-cover object-center h-[200px] hover:scale-[1.5] animateTabImage "
               ></Lazy>
             </div>
           );
@@ -143,7 +168,7 @@ const Tab = () => {
               current === 1 ? "bg-[#FAB207]" : ""
             } text-center cursor-pointer text-sm align-center flex items-center justify-center`}
           >
-            Tab 1
+            Equipment
           </div>
           <div
             onClick={() => setCurrent(2)}
@@ -151,7 +176,7 @@ const Tab = () => {
               current === 2 ? "bg-[#FAB207]" : ""
             } text-center cursor-pointer text-sm align-center flex items-center justify-center`}
           >
-            Tab 2
+             Photos  
           </div>
           <div
             onClick={() => setCurrent(3)}
@@ -159,16 +184,16 @@ const Tab = () => {
               current === 3 ? "bg-[#FAB207]" : ""
             } text-center cursor-pointer text-sm align-center flex items-center justify-center`}
           >
-            Tab 3
+           workout
           </div>
-          <div
+          {/* <div
             onClick={() => setCurrent(4)}
             className={`tabs h-[40px] w-[150px] py-2 px-2 ${
               current === 4 ? "bg-[#FAB207]" : ""
             } text-center cursor-pointer text-sm align-center flex items-center justify-center`}
           >
             Tab 4
-          </div>
+          </div> */}
         </div>
         <div className="w-full">{renderComponent()}</div>
       </div>

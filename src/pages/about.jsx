@@ -22,16 +22,18 @@ const About = () => {
           <div className="w-full md:w-1/2">
             <p className="text-lg text-[#FAB207] mb-4">THE FITNESS ICON GYM</p>
             <p className="mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-              iusto praesentium eaque a omnis ea animi modi dolores non? Vero
-              quasi quibusdam placeat? Accusantium tempore expedita nobis
-              dolorem, exercitationem praesentium.
+              Welcome to The Fitness Icon Gym, where fitness meets excellence!
+              We pride ourselves on providing a dynamic environment where
+              individuals of all fitness levels can thrive and achieve their
+              wellness goals.
             </p>
+            <p className="text-lg text-[#FAB207] mb-4">Our Mission</p>
+
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-              iusto praesentium eaque a omnis ea animi modi dolores non? Vero
-              quasi quibusdam placeat? Accusantium tempore expedita nobis
-              dolorem, exercitationem praesentium.
+              At The Fitness Icon Gym, our mission is to inspire and empower our
+              members to lead healthier, more active lifestyles. We strive to
+              create a supportive community where everyone feels motivated and
+              encouraged to reach their full potential.
             </p>
           </div>
           <div className="w-full md:w-1/2 flex flex-col">

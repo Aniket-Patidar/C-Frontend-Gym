@@ -16,7 +16,7 @@ const Reviews = () => {
   };
 
   return (
-    <div className="w-full h-[84vh] relative bg-red-300">
+    <div className="w-full h-[84vh] relative bg-[]">
       {/* Background Image */}
       <div
         className="w-full h-[84vh] bg-cover bg-center absolute top-0"

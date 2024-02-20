@@ -3,17 +3,18 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 
 import Lazy from "./Lazy";
+import Link from "next/link";
 
 const slides = [
   {
     imageUrl: "/images/s3.jpg",
-    title: "Beautiful Sunset",
-    description: "Experience the magic of ",
+    title: "Explore Our Gym Today!",
+    description: "Explore Our Gym Today!",
   },
   {
     imageUrl: "./images/1.jpg",
-    title: "Serenity of Nature",
-    description: "Discover the tranquility ",
+    title: "Your Gateway to Health and Wellness",
+    description: "Your Gateway to Health and Wellness",
   },
   // Add more slides as needed
 ];
@@ -50,7 +51,7 @@ const MainPage = () => {
                 </p>
                 <h2 className="text-[35px] text-nowrap md:text-[70px] font-[200] mb-4 transition-transform transform  animateHeading flex gap-[20px] capitalize">
                   {/* {slide.title} */}
-                  <p>aniket</p>
+                  <p>The</p>
                   <div className="text-[#FAB207]">
                     <Typewriter
                       options={{
@@ -62,9 +63,11 @@ const MainPage = () => {
                     />
                   </div>
                 </h2>
-                <button className="text-[12px] md:text-sm transition-transform transform border-2 font-semibold px-[39px] md:px-[46px] py-2 z-[20px] animatebtm">
-                  Book A demo
-                </button>
+                <Link href="contractUs">
+                  <button className="text-[12px] md:text-sm transition-transform transform border-2 font-semibold px-[39px] md:px-[46px] py-2 z-[20px] animatebtm">
+                    Book A demo
+                  </button>
+                </Link>
               </div>
             </div>
             <img

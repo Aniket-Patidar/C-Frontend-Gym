@@ -12,7 +12,7 @@ const LocationIcon = () => {
   const handleClick = () => {
     // Redirect to the map page with latitude and longitude as query parameters
     router.push(
-      `https://www.google.com/maps/place/23%C2%B015'55.0%22N+77%C2%B024'19.2%22E/@23.2652866,77.4053275,17z/data=!3m1!4b1!4m4!3m3!8m2!3d23.2652866!4d77.4053275?entry=ttu`
+      `https://www.google.com/maps/place/FITNESS+ICON+GYM/@23.30905,77.4166569,15z/data=!4m2!3m1!1s0x0:0xf7d941b4d407a100?sa=X&ved=2ahUKEwid2qiWt7qEAxVSbPUHHWu8CucQ_BJ6BAgUEAA&cshid=1708449761005922`
     );
   };
 

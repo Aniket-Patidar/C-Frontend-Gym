@@ -14,18 +14,18 @@ const Programs = () => {
         </div>
 
         <div className="flex w-full items-center justify-between flex-col lg:flex-row gap-[10px] lg:gap-0 md:px-2">
-      
           <div className="lg:w-[380px] w-fit flex flex-col gap-[10px]">
             <p>
-              <span className="text-[#FAB207]">RESIDENTIAL</span> DESIGN
+              <span className="text-[#FAB207]"> Personalized </span>Fitness
             </p>
 
             <p className="text-[10px] font-extralight md:text-[13px]">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia
+              We understand that every individual has unique fitness goals and
+              needs. That's why we offer personalized fitness solutions tailored
+              to each member. Whether you're aiming to lose weight, build
+              muscle, or improve your overall health, our experienced trainers
+              will work closely with you to develop a customized workout plan
+              that suits your lifestyle and preferences.
             </p>
 
             <img
@@ -38,14 +38,17 @@ const Programs = () => {
           <div className="lg:w-[380px] w-fit flex flex-col  gap-[10px]">
             <p>
               {" "}
-              <span className="text-[#FAB207]">RESIDENTIAL</span> DESIGN
+              <span className="text-[#FAB207]">Expert </span> Guidance and
+              Support
             </p>
             <p className="text-[13px]">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia
+              Our team of certified trainers is committed to helping you achieve
+              your fitness goals safely and effectively. With their expertise
+              and guidance, you'll receive personalized coaching, technique
+              correction, and motivational support every step of the way.
+              Whether you're new to exercise or a seasoned athlete, our trainers
+              are here to challenge you, inspire you, and celebrate your
+              progress.
             </p>
             <img
               src="/images/s2.jpg"
@@ -57,14 +60,16 @@ const Programs = () => {
           <div className="lg:w-[380px] w-fit flex flex-col  gap-[10px]">
             <p>
               {" "}
-              <span className="text-[#FAB207]">RESIDENTIAL</span> DESIGN
+              <span className="text-[#FAB207]">Building </span> a Supportive
+              Community
             </p>
             <p className="text-[13px]">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia
+              At The Fitness Icon Gym, we believe that a strong sense of
+              community is essential for long-term success in fitness. That's
+              why we foster a supportive and inclusive environment where members
+              can connect, motivate each other, and celebrate their
+              achievements. From group classes to social events, our gym
+              provides opportunities for members to build meaningful
             </p>
             <img
               src="/images/s3.jpg"
