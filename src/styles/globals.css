@@ -751,7 +751,6 @@ html {
   width: 100%;
   background-color: #191919;
   display: flex;
-
   justify-content: space-between;
   gap: 80px;
   padding: 20px 0px;
@@ -782,7 +781,7 @@ footer {
 }
 
 footer h1 {
-  font-size: 20px;
+  font-size: 10px;
 }
 
 footer .part-2 {
@@ -794,6 +793,8 @@ footer .part-2 i {
   font-size: 20px;
 }
 
+
+/*  */
 @media screen and (max-width:768px) {
   .sub-footer {
     gap: 30px;
@@ -803,7 +804,8 @@ footer .part-2 i {
   }
 
   .sub-footer h1 {
-    font-size: 25px;
+    font-size: 17px;
+    font-weight: 750;
   }
 
   .sub-footer ul {
@@ -811,11 +813,11 @@ footer .part-2 i {
   }
 
   .sub-footer li {
-    font-size: 16px;
+    font-size: 13.5px;
     margin-top: 20px;
   }
 }
-
+/*  */
 @media screen and (max-width:460px) {
   .sub-footer {
     padding: 20px;

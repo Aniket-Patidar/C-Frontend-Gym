@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaHome } from "react-icons/fa";
@@ -139,14 +139,14 @@ const Navbar = () => {
 
           <div>
             {navbar ? (
-              <RxHamburgerMenu
+              <RxCross2
                 onClick={() => setNavbar(!navbar)}
-                className="cursor-pointer  md:hidden"
+                className="cursor-pointer text-[24px]  md:hidden"
               />
             ) : (
               <RxHamburgerMenu
                 onClick={() => setNavbar(!navbar)}
-                className="cursor-pointer  md:hidden"
+                className="cursor-pointer text-[24px]  md:hidden"
               />
             )}
           </div>

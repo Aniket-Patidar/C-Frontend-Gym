@@ -19,7 +19,7 @@ const Programs = () => {
               <span className="text-[#FAB207]"> Personalized </span>Fitness
             </p>
 
-            <p className="text-[10px] font-extralight md:text-[13px]">
+            <p className="text-[13.5px] font-extralight md:text-[13px]">
               We understand that every individual has unique fitness goals and
               needs. That&apos;s why we offer personalized fitness solutions tailored
               to each member. Whether you&apos;re aiming to lose weight, build
@@ -41,7 +41,7 @@ const Programs = () => {
               <span className="text-[#FAB207]">Expert </span> Guidance and
               Support
             </p>
-            <p className="text-[10px] font-extralight md:text-[13px]">
+            <p className="text-[13.5px] font-extralight md:text-[13px]">
               Our team of certified trainers is committed to helping you achieve
               your fitness goals safely and effectively. With their expertise
               and guidance, you&apos;ll receive personalized coaching, technique
@@ -63,7 +63,7 @@ const Programs = () => {
               <span className="text-[#FAB207]">Building </span> a Supportive
               Community
             </p>
-            <p className="text-[10px] font-extralight md:text-[13px]">
+            <p className="text-[13.5px] font-extralight md:text-[13px]">
               At The Fitness Icon Gym, we believe that a strong sense of
               community is essential for long-term success in fitness. That&apos;s
               why we foster a supportive and inclusive environment where members
