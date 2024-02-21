@@ -11,7 +11,7 @@ const slides = [
   },
   {
     imageUrl: "/images/1.jpg",
-    title: "Your Gateway to Health and Wellness",
+    title: "Your Gateway to Health and ",
     description: "Your Gateway to Health and Wellness",
   },
   // Add more slides as needed
@@ -62,7 +62,7 @@ const MainPage = () => {
                   <div className="text-[#FAB207]">
                     <Typewriter
                       options={{
-                        strings: ["World Best", "best gym", "web site"],
+                        strings: ["Fitness Icon", "best gym"],
                         autoStart: true,
                         loop: true,
                         delay: 75,

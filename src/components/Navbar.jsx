@@ -75,7 +75,7 @@ const Navbar = () => {
             href="/"
             className="flex items-center justify-center  space-x-3 rtl:space-x-reverse "
           >
-            <Lazy src="/logo.png" className="h-10 w-[80px] md:w-[100px] object-cover object-fit " alt="Logo" />
+            <Lazy src="/logo.png" className="h-10 w-[80px] md:w-[89px] object-cover object-fit " alt="Logo" />
             {/* <h1 className="text-md uppercase font-[500]">fitness Icon Gym</h1> */}
           </Link>
 
