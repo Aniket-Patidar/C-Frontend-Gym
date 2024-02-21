@@ -70,7 +70,7 @@ const Review = () => {
   };
 
   return (
-    <div className="container h-fit w-[60%]  px-[2px] md:w-[100%] lg:w-[90%] relative overflow-hidden">
+    <div className="container h-fit w-[50%] px-[1px] md:w-[100%] lg:w-[90%] relative overflow-hidden ">
       <div
         className="slider h-fit"
         ref={sliderRef}
@@ -82,14 +82,14 @@ const Review = () => {
               <div
                 key={sectionIndex}
                 className={`w-full  md:w-1/2 flex items-start justify-center ${
-                  sectionIndex === 1 ? "hidden w-[0px] lg:flex" : "lg:flex"
+                  sectionIndex === 1 ? "hidden w-[0px] md:flex" : "md:flex"
                 } py-[50px] px-[20px] bg-[#10111393] rounded-lg shadow-md flex justify-center items-start`}
               >
                 <div className="w-[180px] h-[40px] bg-[#FAB207] flex items-center justify-center">
                   <MdReviews className="text-lg font-semibold" />
                 </div>
                 <div className="p-6 ">
-                  <p className={`text-white text-[14px] lg:text-[12px] `}>
+                  <p className={`text-white text-[10px] md:text-[14px] lg:text-[12px] `}>
                     {section.description}
                   </p>
                   <h2 className="text-sm font-semibold text-[#FAB207] mt-3">

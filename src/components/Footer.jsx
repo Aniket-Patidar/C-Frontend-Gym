@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="flex items-center justify-center">
         <div className="sub-footer  justify-between  w-full  max-w-screen-xl">
           {/* <div className="flex gap-[34px] flex-wrap"> */}
-          <div className="part-1">
+          <div className="part-1 px-2 lg:px-0">
             <h1>Popular Locations</h1>
             <ul>
               <li>Delhi</li>

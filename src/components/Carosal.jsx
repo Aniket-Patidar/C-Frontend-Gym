@@ -1,8 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
-
-import Lazy from "./Lazy";
 import Link from "next/link";
 
 const slides = [
@@ -12,7 +10,7 @@ const slides = [
     description: "Explore Our Gym Today!",
   },
   {
-    imageUrl: "./images/1.jpg",
+    imageUrl: "/images/1.jpg",
     title: "Your Gateway to Health and Wellness",
     description: "Your Gateway to Health and Wellness",
   },
@@ -34,8 +32,18 @@ const MainPage = () => {
     );
   };
 
+  useEffect(() => {
+    // Start autoplay when the component mounts
+    const intervalId = setInterval(() => {
+      nextSlide();
+    }, 5000); // Change 5000 to the desired autoplay interval in milliseconds
+
+    // Clear the interval when the component unmounts to avoid memory leaks
+    return () => clearInterval(intervalId);
+  }, []); // Empty dependency array to run this effect only once when the component mounts
+
   return (
-    <div className="w-full md:mt-[100px] h-[100vh] md:h-[86vh] relative overflow-hidden">
+    <div className="w-full md:mt-[100px] h-[100vh] md:h-[90vh] relative overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -45,12 +53,11 @@ const MainPage = () => {
         >
           <div className="h-full flex items-center justify-start  relative">
             <div className="overlay w-full h-full absolute top-0 left-0 bg-[#242c2ea6] z-10">
-              <div className="text-left md:mt-[15%] mt-[70%]  flex flex-col w-[100%] items-center justify-center md:justify-start md:items-start text-white absolute  md:ml-[150px]">
+              <div className="text-left  absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex flex-col w-[100%] items-center justify-center md:justify-start md:items-start text-white absolute  md:ml-[150px]">
                 <p className="text-[12px] md:text-[20px] uppercase animateDis">
                   {slide.description}
                 </p>
                 <h2 className="text-[35px] text-nowrap md:text-[70px] font-[200] mb-4 transition-transform transform  animateHeading flex gap-[20px] capitalize">
-                  {/* {slide.title} */}
                   <p>The</p>
                   <div className="text-[#FAB207]">
                     <Typewriter

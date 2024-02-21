@@ -6,7 +6,7 @@ const Programs = () => {
       <div className="flex flex-col justify-between max-w-screen-xl w-full items-center bg-[#18191B]">
         <p className="text-[30px] font-thin uppercase">What We Do</p>
         <div>
-          <div className="flex items-center gap-2   my-[25px]">
+          <div className="flex items-center gap-2  my-[25px]">
             <div className="w-[30vw] h-[1px] bg-[#dadada8f]"></div>
             <div className="w-[7px] h-[7px] bg-[#DCB800] border-none rounded-full"></div>
             <div className="w-[30vw] h-[1px] bg-[#dadada8f]"></div>
@@ -41,7 +41,7 @@ const Programs = () => {
               <span className="text-[#FAB207]">Expert </span> Guidance and
               Support
             </p>
-            <p className="text-[13px]">
+            <p className="text-[10px] font-extralight md:text-[13px]">
               Our team of certified trainers is committed to helping you achieve
               your fitness goals safely and effectively. With their expertise
               and guidance, you&apos;ll receive personalized coaching, technique
@@ -63,7 +63,7 @@ const Programs = () => {
               <span className="text-[#FAB207]">Building </span> a Supportive
               Community
             </p>
-            <p className="text-[13px]">
+            <p className="text-[10px] font-extralight md:text-[13px]">
               At The Fitness Icon Gym, we believe that a strong sense of
               community is essential for long-term success in fitness. That&apos;s
               why we foster a supportive and inclusive environment where members
